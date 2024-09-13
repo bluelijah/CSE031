@@ -1,0 +1,5 @@
+TPS 1:
+Group Names: Eli Olson, Toby Jacob, Edwin Thomas
+
+
+Mac terminal guide: https://support.apple.com/guide/terminal/welcome/mac
