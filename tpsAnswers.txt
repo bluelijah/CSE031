@@ -1,5 +1,11 @@
 TPS 1:
 Group Names: Eli Olson, Toby Jacob, Edwin Thomas
-
-
 Mac terminal guide: https://support.apple.com/guide/terminal/welcome/mac
+
+TPS 2: 
+1a) You can open a terminal using command + space, and typing terminal
+1b) There are instances where certain operations are running in a terminal, and you cannot run more operations within that same terminal, so youd need a second
+2) you can use ls, to list the directories you can go to, or cd to see your current directory
+3) cd ~/Desktop
+4) mkdir NewDirectoryName
+

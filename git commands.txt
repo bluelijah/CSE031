@@ -1,6 +1,18 @@
+To get the git repository in your vscode:
 git clone "sshlink" (clones the git repository into your vsc)
-git add "filename" (adds a file of filename to your git repository)
-git commit -m <msg> (commits your changes to the repository with the message)
-git push (pushes your file to git)
-git pull (pulls the stuff from the main)
-git status (gives status of the git)
+
+To push your code:
+1) git status (gives status of the git)
+2) git add "filename" (adds a file of filename to your git repository)
+3) git commit -m <msg> (commits your changes to the repository with the message)
+4) git push (pushes your file to git)
+
+To get others code
+1) git pull (pulls the stuff from the main)
+
+
+
+to make a new branch for your work: 
+1) git checkout -b new-branch-name
+then set your branch push origin
+2) git push -u origin new-branch-name
