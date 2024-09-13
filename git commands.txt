@@ -10,8 +10,6 @@ To push your code:
 To get others code
 1) git pull (pulls the stuff from the main)
 
-
-
 to make a new branch for your work: 
 1) git checkout -b new-branch-name
 then set your branch push origin
