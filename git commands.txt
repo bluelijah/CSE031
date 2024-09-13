@@ -1,0 +1,6 @@
+git clone "sshlink" (clones the git repository into your vsc)
+git add "filename" (adds a file of filename to your git repository)
+git commit -m <msg> (commits your changes to the repository with the message)
+git push (pushes your file to git)
+git pull (pulls the stuff from the main)
+git status (gives status of the git)
