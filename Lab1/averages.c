@@ -6,10 +6,27 @@ int validInput;
 double total_even = 0.0, total_odd = 0.0;
 int count_even = 0, count_odd = 0;
 int index = 1;
+int printCounter = 1;
 
 while(1){
-    printf("Enter the %d value: ", index);
-    scanf("%d", &userInput);
+    if (printCounter == 1){
+        printf("Enter the 1st value: ");
+        scanf("%d", &userInput);
+        printCounter ++;
+    } else if(printCounter == 2){
+        printf("Enter the 2nd value: ");
+        scanf("%d", &userInput);
+        printCounter ++;
+    } else if(printCounter == 3){
+        printf("Enter the 3rd value: ");
+        scanf("%d", &userInput);
+        printCounter ++;
+    } else {
+        printf("Enter the %dth value: ", index);
+        scanf("%d", &userInput);
+    }
+    
+
 
     if (userInput == 0) {
         break;
@@ -36,7 +53,7 @@ while(1){
     }
     if (count_even > 0) {
         double avg_even = total_even / count_even;
-        printf("\nAverage of input values whose digits sum up to an even number: %.2f\n", avg_even);
+        printf("\nAverage of input values whose digits sum up to an even number: %.2f", avg_even);
     } else {
         printf("");
     }
