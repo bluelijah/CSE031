@@ -1,0 +1,16 @@
+//for each player input, add to a list, or vector, 
+//then once 0 is entered, in a nested for loop, take the first value of the vector, and add it to the next
+//then divide this by modulo to see if its even or odd. add to even or odd integer, then increase a counter for either even or odd sums
+// once the nested loop has added all them together n!, solve for the average sums by dividing the int by its respective counter
+
+
+//while loop that infinitely functions until broken
+//print the user prompt
+//check the user prompt
+//break if 0
+//add to list if not
+//add counter for even and odd while summing
+//sum digits
+//find sum totals
+//print out results
+//format to liking

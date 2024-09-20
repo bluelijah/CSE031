@@ -1,11 +1,6 @@
 #include <stdio.h>
 int main(){
 
-//for each player input, add to a list, or vector, 
-//then once 0 is entered, in a nested for loop, take the first value of the vector, and add it to the next
-//then divide this by modulo to see if its even or odd. add to even or odd integer, then increase a counter for either even or odd sums
-// once the nested loop has added all them together n!, solve for the average sums by dividing the int by its respective counter
-
 int userInput;
 int validInput;
 double total_even = 0.0, total_odd = 0.0;
@@ -24,11 +19,11 @@ while(1){
     int temp = userInput;
 
     while (temp != 0) {
-            sum_of_digits += temp % 10; // Add the last digit
-            temp /= 10; // Remove the last digit
+            sum_of_digits += temp % 10; 
+            temp /= 10;
         }
 
-        // Check if the sum of digits is even or odd
+       
         if (sum_of_digits % 2 == 0) {
             total_even += userInput;
             count_even++;
