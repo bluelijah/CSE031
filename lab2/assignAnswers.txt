@@ -1,0 +1,42 @@
+Individual Assignment 1: Segmentation Faults
+1. 
+Process 65231 launched: '/Users/eli/Desktop/Code/SchoolCode/CSE 031/CSE031L/Lab2/average' (arm64)
+Enter input values (enter 0 to finish):
+1
+2
+Process 65231 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = EXC_BAD_ACCESS (code=1, address=0x1)
+    frame #0: 0x000000018258de08 libsystem_c.dylib`__svfscanf_l + 5056
+libsystem_c.dylib`:
+->  0x18258de08 <+5056>: str    w0, [x8]
+    0x18258de0c <+5060>: b      0x18258df24               ; <+5340>
+    0x18258de10 <+5064>: ldr    x8, [sp, #0xb8]
+    0x18258de14 <+5068>: add    x9, x8, #0x8
+Target 0: (average) stopped.
+(lldb) 
+
+the faults were caused by scanf in line 25
+
+2. To fix the line to work properly, you need to pass the address, changing the line to scanf("%d", &input);
+
+3. The bug is that none of the values are updates in the read_values or main function, as its passed by value rather than reference. 
+You should use pass-by-reference if you want to modify the argument value in the calling function.
+
+4. values = read_values(&sum) instead, and pass it by reference
+
+
+
+Individual Assignment 2: Fix appendTest.c
+
+1. The values are appended correctly, on the first running of the program
+
+2. The output is not expected, as it concatenates onto the previous appended strings, and jams the words together. 
+Fixed now, by adding s1[s1len + s2len] = '\0'; that clears the prior appended string, since scanf reads strings to characters, reading leftover characters in buffer.
+
+3. The output is not expected, becuase we set the size of the character strings to a max length of 10.
+
+
+
+Individual Assignment 3: Complete arrCopy.c
+
+1. 
