@@ -58,7 +58,9 @@ int bSearch(int *arr, int a, int b, int key) { //searched for a key in the sorte
     //take n, the size of the algorithm, start in the middle, compare search value (&key) to n/2 +1 and n/2 - 1. 
     //If larger than n/2 +1, make another nested loop that deletes values of the array from 0 to n/2 + 1 index
     //if smaller than n/2 -1, make nested loop that deletes values of the array from n/2 -1, to n
-    
+    if (a > b){
+        return -1; //changed to negative one becuase this would mean the function failed at finding the value
+    }
     int arrSize = sizeof(arr);
 
     int mid = (a + b) / 2;
@@ -70,9 +72,6 @@ int bSearch(int *arr, int a, int b, int key) { //searched for a key in the sorte
         return bSearch(arr, a, mid -1, key);
     }
 	//return 0; // Modify this to return an appropriate value!
-    if (a > b){
-        return -1; //changed to negative one becuase this would mean the function failed at finding the value
-    }
 }
     
 
