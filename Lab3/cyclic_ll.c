@@ -7,6 +7,20 @@ typedef struct node {
 
 int has_cycle(node *head) {
 	// Your code goes here:
+  //floyds cycle finding algorithm - tortoise and hare
+
+  node *slowPointer = head;
+  node *fastPointer = head;
+
+  while(fastPointer != NULL && fastPointer->next != NULL){
+    slowPointer = slowPointer->next;
+    fastPointer = fastPointer->next->next;
+
+    if (slowPointer == fastPointer) {
+      return 1;
+    }
+  }
+  return 0;
 }
 
 void test_has_cycle(void) {

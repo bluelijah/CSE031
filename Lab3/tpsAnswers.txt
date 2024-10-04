@@ -30,4 +30,9 @@ a. If an array is decayed to a pointer, then the amount of elements in the array
 b. The original array isn't changed becuase it is copied to a new one called s_arr
 c. The main function prints both the original and sorted array, meaning that both are needed when calling the main. It seems just easier to store two versions of the array, then solving this neccessity some other way. 
 2. Done
-3. 
+3. Done
+
+Individual Assignment 2: Cyclic Linked List
+1. Done
+2. Done
+3. Done - floyds cycle finding algorithm
