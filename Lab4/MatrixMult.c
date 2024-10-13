@@ -62,6 +62,7 @@ int main() {
 	matC = matMult(matA, matB, n); //calls the multiplication and sets the array matC equal to the made array in that function
 	
 	// (6) Call printArray to print out resulting array here.
+	printf("Matrix C:\n");
 	printArray(matC, n);
 
     return 0;
