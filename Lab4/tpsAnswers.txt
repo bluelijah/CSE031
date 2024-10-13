@@ -1,0 +1,35 @@
+TPS (Think-Pair-Share) activity 1:
+1. Ive never worked with %x before or hex format, so I had no expectations, but I was not expecting a simple "2" output
+2. Im expecting a different answer, one made up of hexidecimal values instead of bytes
+3. My answer from two was right, with the print now being "44434241", a series of four hexideicimal codes
+4. Prints out "2" again, which I am suprised by, but thats the second index of the array, and only the bytes of the first were overwritten
+5. 
+a. One array was allocated
+b. They point to the same memory location (of the arrays location) but one is integers and the other characters
+c. After printing, they have the same pointer to the same memory location, "0x16fdfeff8"
+6. Printing the addresses and their respective values the address changed by a value of 04 at the end, maybe to represent a byte with 4 bits
+Address: 0x16fdfeff8, Value: 44434241
+Address: 0x16fdfeffc, Value: 2
+Address: 0x16fdff000, Value: 2
+Address: 0x16fdff004, Value: 2
+7. Done
+8. difference is by 1 byte from 20 to 21,22,23
+9. Done
+10. C accesses individual memory by its data type and address
+
+
+TPS activity 2:
+1. makes a pointer to a pointer of an int, where it will store in each array index, a pointer to a pointer to an int, and allocates memory of n pointers to size int in bytes
+2. To address the ith value of an an array of pointers, you point to the array value + i, *(arr + i) a pointer to the array value i
+3. Done 
+4. We need to pass the size so the functions knows how many elements are present, and to print out
+5. Done
+6. Done 
+7. Done
+
+
+Individual Assignment 1: Matrix Multiplication
+1. Done
+2. Done
+3. Done
+4. 

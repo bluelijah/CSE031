@@ -1,0 +1,25 @@
+TPS 1:
+Group Names: Eli Olson, Toby Jacob, Roshan Sanjeeb, Ryan Mawr
+How to install LLDB: https://lldb.llvm.org/
+
+TPS 2:
+To compile punishment.c with lldb, use: gcc -g -o punishment punishment.c
+To start: lldb punishment
+To set a breakpoint: (lldb) break set -n main or break set -l linenumber
+To run: (lldb) run
+To resume execution after a break: continue
+To exit lldb terminal: quit
+
+A breakpoint allows you to pause running the program at a certain point, used for debugging mainly
+If you want to execute the next line and step into any function calls, use: step
+If you want to execute the next line but skip stepping into any function calls, use: next
+
+TPS 3:
+1. Four variables, two ints, and two pointers
+2. They are declared but not assigned values, meaning they take on random values left within the memory
+3. You fix this by assigning values to each variable
+4. The address of x = 0x16f3d71e8 and of y = 0x16f3d71e4
+5. Value of x = 5 and of y = 10
+6. Using pointers I was successfully able to iterate through the 40 values of the array, and print them out without the use of "[]"
+7. Array names do act as pointers to the array, and outputs the arrays first value location = 0x16f3d71f0
+8. The array location is also = 0x16b36b1f0

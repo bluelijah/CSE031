@@ -1,0 +1,38 @@
+TPS (Think-Pair-Share) activity 1:
+1. Static/Global Pool which stores static variables, Stack Pool which stores function parameters and temporary variables, and Heap Pool which stores dynamically allocated memory
+2. 
+a. 3 variables are declared
+b. 2, ptr stores address of memory, handle points to ptr, an int*
+c. num is a local variable stored in the stack pool, ptr is a local variable in the stack pool, but points to memory in the heap pool, and handle is a local variable in the stack pool
+d. ptr = (int *) malloc(2 * sizeof(int)); memory from malloc comes from heap pool
+3. The stack pool contains num, ptr, and handle. The heap pool contains the memory allocated by ptr and handle. Not sure how im supposed to imput the image of my table. Below are the addresses though:
+Address of num: 0x16fdff008
+Address of ptr: 0x16fdff000
+Address of *ptr: 0x12b804180
+Address of handle: 0x16fdfeff8
+Address of *handle: 0x12b804190
+Process 37638 exited with status = 0 (0x00000000) 
+
+TPS activity 2: 
+1. NodeStruct.c manipulates a linked list using dynamically allocated memory, defining a struct "node" that holds two data fields, an int and float, with a pointer to the next node forming a linked list. The main function allocates memory, the pointer head is pointing to the memory block, and values are assigned to head node. 
+2. 
+Value of head (address of the node): 0x13d104080
+Address of head: 0x16fdfeff0
+Address of iValue in head: 0x13d104080, Value: 5
+Address of fValue in head: 0x13d104084, Value: 3.14
+Address of next in head: 0x13d104088, Value stored in next: 0x0
+Process 38816 exited with status = 0 (0x00000000) 
+3. They are all sequential, increasing by a value of 4 at the end. Head points to the node structure as its initialized. You can access and change the structure's mebers through the head pointer.
+
+Individual Assignment 1: Arrays and pointers
+1. 
+a. If an array is decayed to a pointer, then the amount of elements in the array is no longer kept track of. Furthermore, memory has to be allocated, and accessed correctly with the amount of stored elemenets, and space needed to store them. 
+b. The original array isn't changed becuase it is copied to a new one called s_arr
+c. The main function prints both the original and sorted array, meaning that both are needed when calling the main. It seems just easier to store two versions of the array, then solving this neccessity some other way. 
+2. Done
+3. Done
+
+Individual Assignment 2: Cyclic Linked List
+1. Done
+2. Done
+3. Done - floyds cycle finding algorithm
