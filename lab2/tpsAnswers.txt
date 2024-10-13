@@ -23,3 +23,4 @@ TPS 3:
 6. Using pointers I was successfully able to iterate through the 40 values of the array, and print them out without the use of "[]"
 7. Array names do act as pointers to the array, and outputs the arrays first value location = 0x16f3d71f0
 8. The array location is also = 0x16b36b1f0
+9. Done
